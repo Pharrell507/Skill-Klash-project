@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/home_background"
+    tools:context=".Pantallas.activity_home">
+
+    <!-- Top Toolbar -->
+    <LinearLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="262px"
+        android:layout_alignParentTop="true"
+        android:background="@color/home_topbar"
+        android:orientation="horizontal">
+
+        <!-- user Info -->
+        <LinearLayout
+            android:layout_width="1108px"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:layout_marginTop="10px"
+            android:layout_marginBottom="10px"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110px"
+                android:gravity="center|left"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Kratos_507 "
+                    android:textSize="88px"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif-light"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="#9611"
+                    android:textSize="86px"
+                    android:textColor="#495e69"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rank 15"
+                android:textSize="78px"
+                android:textStyle="bold"
+                android:textColor="#eecb57"/>
+
+        </LinearLayout>
+
+        <!-- Drop Down Button -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="40px">
+
+
+
+        </LinearLayout>
+        
+
+    </LinearLayout>
+
+    <!-- Scroll Body -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topbar"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- News Feed -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="557px">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/my_news_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"/>
+
+                </LinearLayout>
+
+                <!-- Stats Linear Div -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="141px"
+                    android:background="@color/home_topbar"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MY STATS"
+                        android:textStyle="bold"
+                        android:textSize="10pt"
+                        android:textColor="#495e69"/>
+
+                </LinearLayout>
+
+                <!-- Stats Content -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- Bot Toolbar -->
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="260px"
+        android:background="@color/home_botbat"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</RelativeLayout>
