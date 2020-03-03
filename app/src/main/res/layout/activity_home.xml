@@ -36,7 +36,7 @@
                     android:layout_height="match_parent"
                     android:text="Kratos_507 "
                     android:textSize="88px"
-                    android:textColor="#fff"
+                    android:textColor="#607D8B"
                     android:fontFamily="sans-serif-light"
                     android:textStyle="bold"/>
 
@@ -45,7 +45,7 @@
                     android:layout_height="match_parent"
                     android:text="#9611"
                     android:textSize="86px"
-                    android:textColor="#495e69"
+                    android:textColor="#455A64"
                     android:textStyle="bold"/>
 
             </LinearLayout>
@@ -56,7 +56,7 @@
                 android:text="Rank 15"
                 android:textSize="78px"
                 android:textStyle="bold"
-                android:textColor="#eecb57"/>
+                android:textColor="#FFC107"/>
 
         </LinearLayout>
 
@@ -69,7 +69,7 @@
 
 
         </LinearLayout>
-        
+
 
     </LinearLayout>
 
@@ -94,7 +94,7 @@
                 <!-- News Feed -->
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="557px">
+                    android:layout_height="587px">
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/my_news_view"
@@ -116,7 +116,7 @@
                         android:text="MY STATS"
                         android:textStyle="bold"
                         android:textSize="10pt"
-                        android:textColor="#495e69"/>
+                        android:textColor="#607D8B"/>
 
                 </LinearLayout>
 
